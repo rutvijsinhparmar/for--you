@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background: url('background1.jpg') no-repeat center center fixed; 
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+        .message-box {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s;
+        }
+        .message-box:hover { transform: scale(1.05); }
+        h1 { color: #d63384; }
+    </style>
+</head>
+<body>
+    <div class="message-box" onclick="window.location.href='surprise.html'">
+        <h1>Click here for a little boost! ✨</h1>
+        <p>I have something special for you...</p>
+    </div>
+</body>
+</html>
