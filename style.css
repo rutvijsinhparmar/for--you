@@ -5,26 +5,30 @@ body {
     justify-content: center;
     align-items: center;
     font-family: 'Poppins', sans-serif;
+    background-color: #ffafbd; /* Fallback color if image fails */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     overflow: hidden;
+    transition: background-image 0.5s ease-in-out;
 }
 
 .glass-card {
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.2);
     backdrop-filter: blur(15px);
-    border: 1px solid rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 25px;
     padding: 50px;
     text-align: center;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     color: white;
     cursor: pointer;
     transition: transform 0.4s ease;
+    max-width: 400px;
 }
 
-.glass-card:hover { transform: scale(1.02); }
+.glass-card:hover { transform: scale(1.03); }
 
 .btn-primary {
     margin-top: 20px;
@@ -34,11 +38,16 @@ body {
     background: #ff4d6d;
     color: white;
     font-size: 1.1rem;
+    font-weight: bold;
     cursor: pointer;
+    box-shadow: 0 4px 15px rgba(255, 77, 109, 0.4);
     transition: 0.3s;
 }
 
-.btn-primary:hover { background: #ff758f; }
+.btn-primary:hover { 
+    background: #ff758f;
+    transform: translateY(-2px);
+}
 
 .fade-in { animation: fadeIn 2s ease-in; }
 
@@ -47,4 +56,4 @@ body {
     to { opacity: 1; transform: translateY(0); }
 }
 
-.click-hint { font-size: 0.8rem; opacity: 0.6; margin-top: 20px; }
+.click-hint { font-size: 0.8rem; opacity: 0.8; margin-top: 20px; }
