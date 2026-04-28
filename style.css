@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.glass-card {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    padding: 50px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+    transition: transform 0.4s ease;
+}
+
+.glass-card:hover { transform: scale(1.02); }
+
+.btn-primary {
+    margin-top: 20px;
+    padding: 15px 40px;
+    border-radius: 50px;
+    border: none;
+    background: #ff4d6d;
+    color: white;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-primary:hover { background: #ff758f; }
+
+.fade-in { animation: fadeIn 2s ease-in; }
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.click-hint { font-size: 0.8rem; opacity: 0.6; margin-top: 20px; }
