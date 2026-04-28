@@ -1,33 +1,17 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <style>
-        body {
-            background: url('background1.jpg') no-repeat center center fixed; 
-            background-size: cover;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Arial', sans-serif;
-        }
-        .message-box {
-            background: rgba(255, 255, 255, 0.8);
-            padding: 30px;
-            border-radius: 20px;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.3s;
-        }
-        .message-box:hover { transform: scale(1.05); }
-        h1 { color: #d63384; }
-    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Note</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="message-box" onclick="window.location.href='surprise.html'">
-        <h1>Click here for a little boost! ✨</h1>
-        <p>I have something special for you...</p>
+<body style="background-image: url('bg1.jpg');">
+    <div class="glass-card" onclick="window.location.href='surprise.html'">
+        <h1 class="fade-in">Hey Beautiful! ✨</h1>
+        <p class="fade-in">You're doing amazing today, and I'm so proud of you.</p>
+        <p class="click-hint">(Click here for a surprise)</p>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
